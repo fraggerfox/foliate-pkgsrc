@@ -19,24 +19,25 @@ SUBST_MESSAGE.pyvers=	Substitute the correct python version.
 SUBST_STAGE.pyvers=	pre-configure
 SUBST_FILES.pyvers=	src/main.js
 SUBST_VARS.pyvers+=	PYVERSSUFFIX
-#SUBST_SED.pyvers+=	-e 's/@PYVERSSUFFIX@/${PYVERSSUFFIX}/g'
 
-# XXX fails without GNU msgfmt
-_TOOLS_USE_PKGSRC.msgfmt=	yes
+# Fails without GNU msgfmt
+USE_BUILTIN.gettext=	no
 
 REPLACE_PYTHON+=	build-aux/meson/postinstall.py
 REPLACE_PYTHON+=	src/assets/KindleUnpack/*.py
 
-GLIB_SCHEMAS=	com.github.johnfactotum.Foliate.gschema.xml
+INSTALLATION_DIRS+=	libexec/foliate
 
 pre-install:
 	${RM} -f ${WRKSRC}/src/assets/KindleUnpack/*.orig
 
 post-install:
-	${LN} -s -f ${DESTDIR}${PREFIX}/bin/com.github.johnfactotum.Foliate \
+	${MV} ${DESTDIR}${PREFIX}/bin/com.github.johnfactotum.Foliate \
+		${DESTDIR}${PREFIX}/libexec/foliate/com.github.johnfactotum.Foliate
+	${LN} -s -f ${DESTDIR}${PREFIX}/libexec/foliate/com.github.johnfactotum.Foliate \
 		${DESTDIR}${PREFIX}/bin/foliate
 
-.include "../../devel/py-meson/build.mk"
+.include "../../devel/meson/build.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/glib2/schemas.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
