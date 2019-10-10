@@ -1,7 +1,7 @@
 foliate-pkgsrc
 ==============
 
-NetBSD pkgsrc script for script for Foliate.
+NetBSD pkgsrc script for Foliate.
 
 You can find Foliate [here][1]
 
@@ -32,6 +32,8 @@ Credits
 -------
 
 * Foliate is developed and maintained by [John Factotum][3].
+* Thanks to `@coypoop` and `nia@` for reviewing and suggesting fixes to the
+  package.
 
 License
 -------
