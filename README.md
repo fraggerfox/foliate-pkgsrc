@@ -5,8 +5,6 @@ NetBSD [pkgsrc][4] script for Foliate.
 
 You can find Foliate [here][1]
 
-NOTE: This package is not yet available in the pkgsrc tree.
-
 Installation
 ------------
 
