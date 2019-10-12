@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-src_assets_KindleUnpack_kindleunpack.py,v 1.1 2019/10/12 13:45:20 fox Exp $
 
 Fixes unicode display correctly, this prevents crashing on opening
 (kindle format files).

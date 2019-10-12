@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-src_main.js,v 1.1 2019/10/12 13:45:20 fox Exp $
 
 Adds variable to help substitute the correct python version suffix.
 

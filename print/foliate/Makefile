@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2019/10/12 13:45:20 fox Exp $
 
 DISTNAME=	foliate-1.5.3
 CATEGORIES=	print
