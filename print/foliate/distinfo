@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.1 2019/10/12 13:45:20 fox Exp $
+$NetBSD: distinfo,v 1.2 2020/04/06 14:15:47 fox Exp $
 
 SHA1 (foliate-2.0.0.tar.gz) = 3db1ce649536a2ac6544fbcf9650b05761be6d55
 RMD160 (foliate-2.0.0.tar.gz) = 149f864a819b47aad96fc1c02954d1238f4c6721

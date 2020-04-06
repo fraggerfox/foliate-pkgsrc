@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2020/04/06 14:15:47 fox Exp $
 bin/foliate
 libexec/foliate/com.github.johnfactotum.Foliate
 share/applications/com.github.johnfactotum.Foliate.desktop
